@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* ORB SPIN */
+@keyframes spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+
+/* ORB BREATHING (IDLE STATE) */
+@keyframes breathe {
+  0%,100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+}
+
+.animate-breathe {
+  animation: breathe 4s ease-in-out infinite;
+}
+
+
+/* AVATAR FLOATING */
+@keyframes float {
+  0%,100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+
+/* AVATAR TALKING */
+@keyframes talk {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+
+.animate-talk {
+  animation: talk 0.6s ease-in-out infinite;
+}
+
+
+/* LISTENING GLOW */
+@keyframes listen {
+  0%,100% { filter: brightness(1); }
+  50% { filter: brightness(1.25); }
+}
+
+.animate-listen {
+  animation: listen 1s ease-in-out infinite;
+}
