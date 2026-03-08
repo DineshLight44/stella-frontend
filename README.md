@@ -1,168 +1,166 @@
-⭐ Stella – AI Emotional Support Companion
+# ⭐ Stella – AI Emotional Support Companion
 
-Stella is a voice-based AI emotional support assistant designed to talk with users in a natural, friendly way.
-It listens to the user’s voice, processes the message using AI, and responds with a human-like voice.
+Stella is a **voice-based AI emotional support assistant** that allows users to have natural conversations using voice.
 
-The goal of this project is to create a simple emotional support companion that users can talk to when they feel lonely, stressed, or need someone to listen.
+The application listens to user speech, processes it using AI, and responds with a friendly synthesized voice.
 
-🌐 Live Demo
+The goal of this project is to explore how AI can act as a **supportive conversational companion** for users who want someone to talk to.
 
-Frontend is deployed on Vercel:
+---
 
-https://stella-frontend-psi.vercel.app/
+# 🌐 Live Demo
 
-⚠️ Backend server is currently offline, so the assistant may not respond.
+Frontend deployed on Vercel:
 
-🧠 Project Architecture
-                User
-                 │
-                 │ Voice Input
-                 ▼
-        ┌───────────────────┐
-        │   Frontend (React) │
-        │   Stella UI Orb    │
-        └───────────────────┘
-                 │
-                 │ API Request
-                 ▼
-        ┌───────────────────┐
-        │   Backend (Node)  │
-        │   AI Processing   │
-        └───────────────────┘
-                 │
-                 │ AI Response
-                 ▼
-        ┌───────────────────┐
-        │ Text-to-Speech    │
-        │ Voice Generation  │
-        └───────────────────┘
-                 │
-                 ▼
-              User hears response
-🖥️ Frontend
+🔗 https://stella-frontend-psi.vercel.app/
 
-Frontend handles:
+⚠️ **Note:**  
+The backend server is currently **offline**, so AI responses may not work.
 
-Voice recognition
+---
 
-User interface
+# 🧠 Project Architecture
+            User
+             │
+             │ Voice Input
+             ▼
+    ┌─────────────────────┐
+    │   Frontend (React)  │
+    │   Stella UI Orb     │
+    └─────────────────────┘
+             │
+             │ API Request
+             ▼
+    ┌─────────────────────┐
+    │   Backend (Node.js) │
+    │   AI Processing     │
+    └─────────────────────┘
+             │
+             │ AI Response
+             ▼
+    ┌─────────────────────┐
+    │   Text-to-Speech    │
+    │   Voice Generation  │
+    └─────────────────────┘
+             │
+             ▼
+       User hears response
+       
+       
+---
 
-Sending messages to backend
+# ✨ Features
 
-Playing AI voice responses
+- 🎙️ Voice-based conversation
+- 🤖 AI generated responses
+- 🔊 Text-to-speech voice replies
+- 🌌 Animated Stella Orb interface
+- 💬 Emotional support focused interaction
+- ⚡ Fast and responsive UI
 
-Stella animated orb
+---
 
-Tech Used
+# 🛠 Tech Stack
 
-React
+### Frontend
+- React
+- Vite
+- TailwindCSS
+- Web Speech API
 
-Vite
+### Backend
+- Node.js
+- Express
+- AI API (LLM)
+- ElevenLabs Text-to-Speech
 
-TailwindCSS
+### Deployment
+- Vercel (Frontend)
 
-Web Speech API
+---
 
-Vercel (deployment)
 
-Frontend URL:
 
-https://stella-frontend-psi.vercel.app/
 
-⚙️ Backend
+# 🚀 Running Locally
 
-The backend handles:
+### 1️⃣ Clone the Repository
 
-AI response generation
-
-Conversation processing
-
-Text-to-speech API calls
-
-Sending responses back to frontend
-
-Tech Used
-
-Node.js
-
-Express
-
-OpenAI / AI API
-
-ElevenLabs (voice generation)
-
-⚠️ Backend Status
-
-Currently the backend server is offline, so:
-
-Voice input works
-
-UI loads correctly
-
-But AI responses will not work
-
-To fully run Stella, the backend server must be started locally or deployed.
-
-🧩 Features
-
-🎙️ Voice input conversation
-
-🤖 AI generated replies
-
-🔊 Voice responses
-
-🌌 Animated Stella Orb interface
-
-💬 Emotional support focused conversation
-
-⚡ Fast React UI
-
-📂 Project Structure
-stella/
-│
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   │   └── StellaOrb.jsx
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   │
-│   ├── index.html
-│   └── package.json
-│
-├── backend/
-│   ├── server.js
-│   ├── routes
-│   └── package.json
-│
-└── README.md
-🚀 Running Locally
-1️⃣ Clone the Repository
+```bash
 git clone https://github.com/yourusername/stella-ai.git
 cd stella-ai
+
 2️⃣ Run Frontend
 cd frontend
 npm install
 npm run dev
+
 3️⃣ Run Backend
 cd backend
 npm install
 node server.js
-🔮 Future Improvements
 
-Memory based conversations
 
-Emotion detection
 
-Better voice synthesis
 
-Chat history
 
-Mobile optimization
 
-Fully deployed backend
 
-❤️ Purpose of Stella
 
-Stella is designed as a friendly AI companion that listens and talks with users.
-The project explores how AI can provide basic emotional support through natural conversation.
+
+
+
+# ⚠️ Backend Status
+
+The backend server is currently **offline**, so the AI assistant cannot generate responses at the moment.
+
+What still works:
+- The frontend UI loads normally
+- Voice recognition can capture user input
+- The Stella interface and orb animation work
+
+What does **not** work currently:
+- AI response generation
+- Text-to-speech voice replies from the backend
+
+This project was designed with a backend API that processes user input and returns AI-generated responses. When the backend server is deployed or started locally, full functionality will be restored.
+
+---
+
+# 🔧 Backend Setup (Optional)
+
+To run the backend locally:
+
+```bash
+cd backend
+npm install
+node server.js
+
+
+
+# 🔮 Future Improvements
+
+Planned improvements for the Stella AI companion:
+
+-   Persistent conversation memory
+    
+-   Emotion detection from voice/text
+    
+-   Improved voice synthesis
+    
+-   Chat history support
+    
+-   Mobile optimization
+    
+-   Fully deployed backend infrastructure
+    
+-   Real-time streaming responses
+    
+
+-----------
+
+# ❤️ Purpose of Stella
+
+Stella is designed to be a **friendly AI companion** that listens and responds to users in a conversational way.
+
+The project explores how voice-based AI systems can provide **basic emotional support and interactive conversation experiences**.
