@@ -110,7 +110,7 @@ node server.js
 
 
 
-# ⚠️ Backend Status
+### ⚠️ Backend Status
 
 The backend server is currently **offline**, so the AI assistant cannot generate responses at the moment.
 
@@ -131,7 +131,6 @@ This project was designed with a backend API that processes user input and retur
 
 To run the backend locally:
 
-```bash
 cd backend
 npm install
 node server.js
@@ -161,6 +160,6 @@ Planned improvements for the Stella AI companion:
 
 # ❤️ Purpose of Stella
 
-Stella is designed to be a **friendly AI companion** that listens and responds to users in a conversational way.
+Stella is designed to be a friendly AI companion that listens and responds to users in a conversational way.
 
-The project explores how voice-based AI systems can provide **basic emotional support and interactive conversation experiences**.
+The project explores how voice-based AI systems can provide basic emotional support and interactive conversation experiences.
